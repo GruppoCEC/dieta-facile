@@ -74,7 +74,7 @@ js/spesa.js           scheda Spesa
 js/ricette.js         scheda Ricette: suggerimenti per pasto + ricettario con ricerca
 js/emoji.js           emoji per alimenti e piatti (da dati/emoji.json)
 js/calorie.js         stima indicativa delle calorie (da dati/calorie.json), disattivabile
-dati/diete.json       registro delle diete { id, nome, file, ricette? }
+dati/diete.json       registro delle diete { id, nome, file, ricette?, ricetteAggiuntive? }
 dati/diete/<id>/dieta.json  un piano nutrizionale per dieta (stesso formato)
 dati/ricette.json     ricettario
 dati/stagioni.json    frutta e verdura di stagione per mese
@@ -103,7 +103,11 @@ Non passare alla fase successiva senza la conferma dell'utente.
 
 Stato al 18/09/2026: Fasi 1-5 completate; multi-dieta attivo con due diete registrate
 (`mediterranea-a` famiglia 1, `armonia-b` famiglia 2), verifica in docs/diete/. L'app è pubblicata su GitHub Pages e installata
-sull'iPhone; la sincronizzazione GitHub è attiva. Ad ogni pubblicazione aumentare `VERSIONE`
+sull'iPhone; la sincronizzazione GitHub è attiva.
+27/10/2026: la dieta `armonia-b` (famiglia 2) è stata sostituita con il nuovo piano a menù
+settimanale del 24/10/2026 (stesso id, nome nuovo) e ha un ricettario aggiuntivo
+`dati/diete/armonia-b/ricette.json`. Punti chiariti con Davide in docs/diete/armonia-b.md
+(le frequenze del riquadro prevalgono sul menù; la pasta di ceci conta come legumi). Versione 10. Ad ogni pubblicazione aumentare `VERSIONE`
 in `sw.js` e ricaricare i file cambiati su GitHub (guida in `docs/PUBBLICAZIONE.md`).
 
 ## 7. Regole operative

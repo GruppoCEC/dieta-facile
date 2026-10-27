@@ -1,5 +1,5 @@
 {
-  "note": "Registro delle diete disponibili. Ogni dieta è un file con lo stesso formato; 'ricette' è facoltativo (se manca si usa il ricettario comune dati/ricette.json). L'id compare nel link ?dieta=<id> e nel nome della chiave di salvataggio: non cambiarlo dopo l'uso.",
+  "note": "Registro delle diete disponibili. Ogni dieta è un file con lo stesso formato; 'ricette' è facoltativo (se manca si usa il ricettario comune dati/ricette.json); 'ricetteAggiuntive' è facoltativo e aggiunge al ricettario le ricette di quella sola dieta. L'id compare nel link ?dieta=<id> e nel nome della chiave di salvataggio: non cambiarlo dopo l'uso.",
   "diete": [
     {
       "id": "mediterranea-a",
@@ -8,8 +8,9 @@
     },
     {
       "id": "armonia-b",
-      "nome": "Dieta Armonia — famiglia 2",
-      "file": "dati/diete/armonia-b/dieta.json"
+      "nome": "Dieta menù settimanale — famiglia 2",
+      "file": "dati/diete/armonia-b/dieta.json",
+      "ricetteAggiuntive": "dati/diete/armonia-b/ricette.json"
     }
   ]
 }

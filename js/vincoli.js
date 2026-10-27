@@ -64,22 +64,27 @@ export function riepilogoLimiti(dieta, piano) {
   });
 }
 
-/** [{ id, nome, n, min, max, stato }] con stato "ok" | "sotto" | "sopra". Il pasto libero non conta. */
+/**
+ * [{ id, nome, n, min, max, stato }] con stato "ok" | "sotto" | "sopra". Il pasto libero non conta.
+ * Se una categoria non ha "max" (es. "almeno 4 volte"), non c'è limite superiore.
+ * Anche un carboidrato con "categoria" (es. pasta di legumi → legumi) entra nel conteggio.
+ */
 export function riepilogoSecondi(dieta, piano) {
   const conta = {};
   for (const giorno of GIORNI) {
     for (const slot of SLOT_PRINCIPALI) {
       const sec = trovaSecondo(dieta, slot, piano.scelte[giorno][slot].secondo);
-      if (sec && sec.categoria && sec.categoria !== 'libero') {
-        conta[sec.categoria] = (conta[sec.categoria] || 0) + 1;
-      }
+      if (sec && sec.categoria === 'libero') continue;
+      if (sec && sec.categoria) conta[sec.categoria] = (conta[sec.categoria] || 0) + 1;
+      const carbo = trovaCarbo(dieta, slot, piano.scelte[giorno][slot].carbo);
+      if (carbo && carbo.categoria) conta[carbo.categoria] = (conta[carbo.categoria] || 0) + 1;
     }
   }
   return dieta.frequenzeSecondi.categorie.map(c => {
     const n = c.somma ? c.somma.reduce((tot, k) => tot + (conta[k] || 0), 0) : (conta[c.id] || 0);
     let statoCat = 'ok';
     if (n < c.min) statoCat = 'sotto';
-    else if (n > c.max) statoCat = 'sopra';
+    else if (c.max != null && n > c.max) statoCat = 'sopra';
     return { id: c.id, nome: c.nome, n, min: c.min, max: c.max, stato: statoCat };
   });
 }
@@ -147,6 +152,11 @@ export function chiaveVariante(ruolo = null) {
 export function ingredientiEffettivi(opz, variante) {
   if (variante && Array.isArray(variante.ingredienti)) return variante.ingredienti;
   return opz.ingredienti || [];
+}
+
+/** Quanta verdura prevede la dieta a pasto: "a volontà" se non indicato in dieta.verduraQuantita. */
+export function quantitaVerdura(dieta) {
+  return dieta.verduraQuantita || 'a volontà';
 }
 
 /** Prima lettera maiuscola. */

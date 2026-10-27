@@ -3,6 +3,146 @@
   "voci": [
     {
       "parole": [
+        "fagioli in scatola"
+      ],
+      "kcal100": 100
+    },
+    {
+      "parole": [
+        "fave in scatola"
+      ],
+      "kcal100": 90
+    },
+    {
+      "parole": [
+        "lenticchie in scatola"
+      ],
+      "kcal100": 110
+    },
+    {
+      "parole": [
+        "ceci in scatola"
+      ],
+      "kcal100": 120
+    },
+    {
+      "parole": [
+        "piselli in scatola"
+      ],
+      "kcal100": 80
+    },
+    {
+      "parole": [
+        "legumi in scatola"
+      ],
+      "kcal100": 110
+    },
+    {
+      "parole": [
+        "hamburger"
+      ],
+      "kcal100": 180
+    },
+    {
+      "parole": [
+        "pasta di ceci"
+      ],
+      "kcal100": 340
+    },
+    {
+      "parole": [
+        "pasta all'uovo"
+      ],
+      "kcal100": 370
+    },
+    {
+      "parole": [
+        "tortellini"
+      ],
+      "kcal100": 300
+    },
+    {
+      "parole": [
+        "polenta"
+      ],
+      "kcal100": 360
+    },
+    {
+      "parole": [
+        "formaggio fresco"
+      ],
+      "kcal100": 220
+    },
+    {
+      "parole": [
+        "stracchino"
+      ],
+      "kcal100": 300
+    },
+    {
+      "parole": [
+        "groviera"
+      ],
+      "kcal100": 390
+    },
+    {
+      "parole": [
+        "yogurt cremoso",
+        "yogurt mila"
+      ],
+      "kcal100": 140
+    },
+    {
+      "parole": [
+        "barretta ai cereali"
+      ],
+      "kcal100": 400
+    },
+    {
+      "parole": [
+        "grissini"
+      ],
+      "kcal100": 410
+    },
+    {
+      "parole": [
+        "pop corn"
+      ],
+      "kcal100": 450
+    },
+    {
+      "parole": [
+        "tisana"
+      ],
+      "kcalPz": 0,
+      "kcal100": 0
+    },
+    {
+      "parole": [
+        "mandorle"
+      ],
+      "kcal100": 600
+    },
+    {
+      "parole": [
+        "nocciole"
+      ],
+      "kcal100": 650
+    },
+    {
+      "parole": [
+        "noci"
+      ],
+      "kcal100": 690
+    },
+    {
+      "parole": [
+        "minestrone"
+      ],
+      "kcal100": 45
+    },
+    {
+      "parole": [
         "wasa original",
         "wasa integrali"
       ],

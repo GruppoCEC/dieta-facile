@@ -1,0 +1,655 @@
+{
+  "versione": "1.1",
+  "note": "Ricette aggiuntive per la dieta della famiglia 2, costruite sugli abbinamenti del menù (giorni e alternative del piano). Dosi per 1 porzione con le grammature del piano; condimenti solo tra quelli consentiti (olio della giornata, spezie, erbe, aceto, limone, brodo vegetale). Si sommano al ricettario comune solo per questa dieta.",
+  "categorie": [],
+  "ricette": [
+    {
+      "id": "b-pasta-zucchine-mozzarella",
+      "nome": "Pasta integrale con zucchine e mozzarella",
+      "categoria": "unico",
+      "slot": [
+        "pranzo"
+      ],
+      "tag": [
+        "formaggio",
+        "pasta"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "80 g pasta di semola integrale (corta)",
+        "200 g zucchine",
+        "100 g mozzarella di vacca",
+        "basilico, pepe",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Taglia le zucchine a dadini e stufale in padella con un filo d'olio, 2-3 cucchiai d'acqua, sale poco e pepe per 8-10 minuti. Cuoci la pasta al dente, scolala tenendo un po' d'acqua di cottura e saltala con le zucchine. Fuori dal fuoco aggiungi la mozzarella a cubetti (meglio se scolata per qualche minuto), il basilico e l'olio rimasto a crudo."
+    },
+    {
+      "id": "b-riso-piselli-carote",
+      "nome": "Riso basmati con piselli e carote",
+      "categoria": "unico",
+      "slot": [
+        "pranzo",
+        "cena"
+      ],
+      "tag": [
+        "legumi",
+        "riso"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "80 g riso basmati (a cena 60 g)",
+        "120 g piselli in scatola scolati",
+        "200 g carote",
+        "brodo vegetale, prezzemolo, curcuma",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Lava bene il riso e lessalo in acqua (o brodo vegetale) per il tempo indicato. Intanto taglia le carote a rondelle sottili e stufale in padella con poca acqua o brodo per 10 minuti; aggiungi i piselli sciacquati e un pizzico di curcuma e scalda 3-4 minuti. Unisci il riso scolato, completa con prezzemolo tritato e l'olio a crudo. Ottimo anche tiepido o freddo il giorno dopo."
+    },
+    {
+      "id": "b-pasta-pomodoro-uovo",
+      "nome": "Pasta integrale al pomodoro fresco con uova strapazzate",
+      "categoria": "unico",
+      "slot": [
+        "pranzo"
+      ],
+      "tag": [
+        "uova",
+        "pasta"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "80 g pasta di semola integrale",
+        "200 g pomodori da insalata (o pomodorini)",
+        "2 uova",
+        "basilico o origano, pepe",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Taglia i pomodori a pezzetti e cuocili in padella 5-6 minuti con un cucchiaio d'acqua, origano e un pizzico di sale. Cuoci la pasta. Sbatti le uova con pepe e strapazzale a fuoco basso in una padella antiaderente, mescolando finché sono appena rapprese. Condisci la pasta con il pomodoro, aggiungi le uova strapazzate, il basilico e l'olio a crudo."
+    },
+    {
+      "id": "b-gnocchi-zucchine-ricotta",
+      "nome": "Gnocchi con crema di ricotta e zucchine",
+      "categoria": "unico",
+      "slot": [
+        "pranzo"
+      ],
+      "tag": [
+        "formaggio",
+        "gnocchi"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "120 g gnocchi",
+        "200 g zucchine",
+        "100 g ricotta di vacca",
+        "menta o basilico, scorza di limone, pepe",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Grattugia metà delle zucchine e taglia il resto a rondelle; stufale in padella con un filo d'olio e un goccio d'acqua per 6-7 minuti. Lavora la ricotta con un cucchiaio di acqua di cottura, pepe e scorza di limone fino a ottenere una crema. Lessa gli gnocchi, scolali appena salgono a galla e saltali con le zucchine; fuori dal fuoco unisci la crema di ricotta, la menta e l'olio rimasto."
+    },
+    {
+      "id": "b-gnocchi-salmone-zucchine",
+      "nome": "Gnocchi con salmone e zucchine",
+      "categoria": "unico",
+      "slot": [
+        "pranzo"
+      ],
+      "tag": [
+        "pesce_fresco",
+        "gnocchi"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "120 g gnocchi",
+        "120 g salmone fresco (senza pelle e spine)",
+        "200 g zucchine",
+        "erba cipollina o aneto, limone",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Taglia le zucchine a julienne o a dadini e il salmone a cubetti. Stufa le zucchine in padella con poca acqua per 5 minuti, poi aggiungi il salmone e cuoci 3-4 minuti, senza farlo seccare. Lessa gli gnocchi, scolali e saltali nel condimento. Completa con erba cipollina, qualche goccia di limone e l'olio a crudo."
+    },
+    {
+      "id": "b-couscous-ceci-verdure",
+      "nome": "Cous cous con ceci, zucchine e melanzane",
+      "categoria": "unico",
+      "slot": [
+        "pranzo"
+      ],
+      "tag": [
+        "legumi",
+        "couscous"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "80 g cous cous",
+        "120 g ceci in scatola scolati",
+        "200 g zucchine",
+        "125 g melanzane",
+        "curcuma, cumino o paprika dolce, menta o prezzemolo",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Taglia zucchine e melanzane a cubetti e cuocile in padella coperta con poca acqua e le spezie per 10-12 minuti (oppure grigliale). Versa sul cous cous lo stesso peso di acqua bollente salata (o brodo vegetale), copri 5 minuti e sgrana con una forchetta. Unisci verdure e ceci sciacquati, completa con le erbe e l'olio a crudo. Si porta bene anche al lavoro."
+    },
+    {
+      "id": "b-merluzzo-patate-cartoccio",
+      "nome": "Merluzzo al cartoccio con patate e pomodorini",
+      "categoria": "secondo",
+      "slot": [
+        "pranzo",
+        "cena"
+      ],
+      "tag": [
+        "pesce_fresco",
+        "patate"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "merluzzo o nasello: 200 g a pranzo, 180 g a cena",
+        "patate: 200 g a pranzo, 180 g a cena",
+        "lattuga (160 g) come contorno crudo",
+        "prezzemolo, limone, rosmarino",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Taglia le patate a fette sottili e precuocile 8 minuti al vapore. Su un foglio di carta forno disponi le patate, il filetto di pesce, rosmarino, prezzemolo, una fetta di limone e un pizzico di sale. Chiudi il cartoccio e cuoci in forno a 190 °C per 15-18 minuti. Servi con la lattuga condita con il resto dell'olio e un po' di limone o aceto."
+    },
+    {
+      "id": "b-tortellini-brodo-bieta",
+      "nome": "Tortellini in brodo vegetale con bieta",
+      "categoria": "unico",
+      "slot": [
+        "pranzo"
+      ],
+      "tag": [
+        "piatto_unico",
+        "tortellini"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "150 g tortellini freschi",
+        "200 g bieta",
+        "brodo vegetale",
+        "pepe, noce moscata",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Lava la bieta, tagliala a striscioline e stufala in padella coperta per 6-8 minuti con poca acqua. Porta a bollore il brodo vegetale e cuoci i tortellini per il tempo indicato. Servili in brodo con la bieta a parte (condita con olio, pepe e un pizzico di noce moscata) oppure tutto insieme nel piatto fondo. Contorno di pomodori o lattuga a piacere, come nel menù della domenica."
+    },
+    {
+      "id": "b-tortellini-pomodoro",
+      "nome": "Tortellini al pomodoro fresco con insalata",
+      "categoria": "unico",
+      "slot": [
+        "pranzo"
+      ],
+      "tag": [
+        "piatto_unico",
+        "tortellini"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "150 g tortellini freschi",
+        "200 g pomodori da insalata",
+        "200 g bieta oppure 160 g lattuga",
+        "basilico",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Fai un sughetto veloce con metà dei pomodori a pezzetti, basilico e un cucchiaio d'acqua (5 minuti in padella). Cuoci i tortellini, scolali e saltali nel sugo. Con gli altri pomodori e la lattuga (o la bieta lessata) prepara il contorno, da condire con l'olio rimasto. Ricorda: con i tortellini non c'è secondo."
+    },
+    {
+      "id": "b-polenta-funghi-stracchino",
+      "nome": "Polenta morbida con funghi e stracchino",
+      "categoria": "unico",
+      "slot": [
+        "pranzo"
+      ],
+      "tag": [
+        "formaggio",
+        "polenta"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "80 g farina per polenta",
+        "150 g funghi prataioli",
+        "100 g stracchino",
+        "prezzemolo, aglio (a piacere), timo",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Cuoci la polenta in circa 350 ml di acqua salata mescolando spesso (o usa quella istantanea: 5-8 minuti). Pulisci e affetta i funghi e trifolali in padella con poco olio, uno spicchio d'aglio (da togliere) e un goccio d'acqua per 8-10 minuti; finisci con prezzemolo. Servi la polenta morbida con lo stracchino a cucchiaiate che si scioglie sopra e i funghi. Ideale in autunno."
+    },
+    {
+      "id": "b-polenta-lenticchie",
+      "nome": "Polenta con lenticchie in umido",
+      "categoria": "unico",
+      "slot": [
+        "pranzo"
+      ],
+      "tag": [
+        "legumi",
+        "polenta"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "80 g farina per polenta",
+        "120 g lenticchie in scatola scolate",
+        "200 g carote (oppure pomodori)",
+        "rosmarino, alloro, brodo vegetale",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Taglia le carote a dadini piccoli e stufale con rosmarino e alloro in un dito di brodo vegetale per 10 minuti. Aggiungi le lenticchie sciacquate e cuoci altri 5 minuti finché il sugo si addensa. Prepara la polenta e servila con le lenticchie sopra e l'olio a crudo."
+    },
+    {
+      "id": "b-orzotto-zucca-ceci",
+      "nome": "Orzotto alla zucca con ceci e rosmarino",
+      "categoria": "unico",
+      "slot": [
+        "pranzo"
+      ],
+      "tag": [
+        "legumi",
+        "cereale-chicco"
+      ],
+      "difficolta": 2,
+      "porzioni": 1,
+      "ingredienti": [
+        "80 g orzo perlato",
+        "200 g zucca gialla (pesata pulita)",
+        "120 g ceci in scatola scolati",
+        "brodo vegetale, rosmarino, pepe",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Taglia la zucca a cubetti e cuocila in pentola con poco brodo finché è morbida; schiacciane metà con la forchetta. Aggiungi l'orzo sciacquato e cuoci come un risotto, aggiungendo brodo caldo poco per volta (circa 25-30 minuti). Negli ultimi 5 minuti unisci i ceci e il rosmarino tritato. Completa con pepe e l'olio a crudo."
+    },
+    {
+      "id": "b-pasta-ceci-rosmarino",
+      "nome": "Pasta e ceci al rosmarino",
+      "categoria": "unico",
+      "slot": [
+        "pranzo",
+        "cena"
+      ],
+      "tag": [
+        "legumi",
+        "pasta"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "pasta di semola integrale corta: 80 g a pranzo, 60 g a cena",
+        "120 g ceci in scatola scolati",
+        "200 g pomodori (oppure bieta o spinaci)",
+        "rosmarino, aglio, brodo vegetale, peperoncino a piacere",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "In una pentola scalda un filo d'olio con aglio e rosmarino, aggiungi i pomodori a pezzi e metà dei ceci; dopo 5 minuti frulla una parte dei ceci per rendere tutto cremoso. Allunga con brodo vegetale, porta a bollore e cuoci la pasta direttamente lì, aggiungendo brodo se serve. Unisci i ceci rimasti, togli l'aglio e completa con l'olio a crudo e un pizzico di peperoncino."
+    },
+    {
+      "id": "b-panino-groviera-grigliate",
+      "nome": "Panino semintegrale con groviera e verdure grigliate",
+      "categoria": "unico",
+      "slot": [
+        "pranzo"
+      ],
+      "tag": [
+        "formaggio",
+        "pane"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "90 g pane semintegrale (3 fette)",
+        "50 g groviera",
+        "125 g melanzane oppure 150 g peperoni, più zucchine",
+        "origano, aceto balsamico",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Affetta le verdure e grigliale su una piastra ben calda senza condimento; poi condiscile con olio, origano e qualche goccia di aceto balsamico. Farcisci il pane con la groviera a fettine e le verdure ancora calde, così il formaggio si ammorbidisce. Comodo da portare fuori casa (il piano suggerisce proprio di usare verdura e secondo come ripieno)."
+    },
+    {
+      "id": "b-couscous-salmone",
+      "nome": "Cous cous tiepido con salmone, zucchine e limone",
+      "categoria": "unico",
+      "slot": [
+        "pranzo"
+      ],
+      "tag": [
+        "pesce_fresco",
+        "couscous"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "80 g cous cous",
+        "120 g salmone fresco",
+        "200 g zucchine",
+        "limone (succo e scorza), aneto o prezzemolo",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Cuoci il salmone alla piastra o al vapore (8-10 minuti) e sbriciolalo. Taglia le zucchine a dadini e stufale 5 minuti. Prepara il cous cous con acqua bollente salata e sgranalo. Unisci tutto con scorza e succo di limone, le erbe e l'olio a crudo."
+    },
+    {
+      "id": "b-riso-lenticchie-zucchine",
+      "nome": "Riso con lenticchie e zucchine al curry",
+      "categoria": "unico",
+      "slot": [
+        "cena",
+        "pranzo"
+      ],
+      "tag": [
+        "legumi",
+        "riso"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "riso: 60 g a cena (3 cucchiai), 80 g a pranzo",
+        "120 g lenticchie in scatola scolate",
+        "200 g zucchine (oppure bieta, o 125 g melanzane)",
+        "curry o curcuma, zenzero, prezzemolo",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Lava il riso e lessalo. Intanto stufa le zucchine a cubetti in padella con un goccio d'acqua e il curry per 6-7 minuti, poi aggiungi le lenticchie sciacquate e scalda 3 minuti. Unisci il riso scolato, completa con prezzemolo e l'olio a crudo. È la cena del lunedì del menù."
+    },
+    {
+      "id": "b-pollo-limone-bieta",
+      "nome": "Petto di pollo al limone con bieta e pane integrale",
+      "categoria": "secondo",
+      "slot": [
+        "cena"
+      ],
+      "tag": [
+        "carne_bianca",
+        "pane"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "140 g petto di pollo (1 palmo)",
+        "200 g bieta",
+        "80 g pane integrale (2 fette e ½)",
+        "limone, rosmarino o salvia, pepe, aglio a piacere",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Batti leggermente il petto di pollo, marinalo 10 minuti con succo di limone, rosmarino e pepe. Cuocilo su una piastra o padella antiaderente ben calda 4-5 minuti per lato, bagnando con il resto della marinata. Stufa la bieta in padella coperta con poca acqua (e uno spicchio d'aglio) per 6-8 minuti; condisci con olio a crudo e limone. Servi con il pane tostato."
+    },
+    {
+      "id": "b-spigola-patate-forno",
+      "nome": "Spigola al forno con patate al rosmarino e lattuga",
+      "categoria": "secondo",
+      "slot": [
+        "cena"
+      ],
+      "tag": [
+        "pesce_fresco",
+        "patate"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "180 g spigola (o orata) pulita",
+        "180 g patate (2 piccole)",
+        "100 g lattuga",
+        "rosmarino, timo, limone, pepe",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Taglia le patate a spicchi, sbollentale 5 minuti, poi mettile in teglia con carta forno, rosmarino e metà dell'olio; inforna a 200 °C per 15 minuti. Aggiungi la spigola (intera o in filetti) con fette di limone e timo e cuoci altri 15-20 minuti (10-12 se in filetti). Servi con la lattuga condita con l'olio rimasto e limone. È la cena del mercoledì."
+    },
+    {
+      "id": "b-hamburger-patate",
+      "nome": "Hamburger di manzo alla piastra con patate e insalata",
+      "categoria": "secondo",
+      "slot": [
+        "cena"
+      ],
+      "tag": [
+        "carne_rossa",
+        "patate"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "100 g hamburger di manzo o vitello",
+        "180 g patate",
+        "100 g lattuga (o pomodori)",
+        "rosmarino, origano, pepe",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Lessa o cuoci al vapore le patate a tocchetti (12-15 minuti), poi condiscile con rosmarino e metà dell'olio. Cuoci l'hamburger su una piastra ben calda 3-4 minuti per lato, senza schiacciarlo, con origano e pepe. Servi con l'insalata condita con il resto dell'olio. Nel menù è l'alternativa alla spigola del mercoledì (carne rossa: 1 volta a settimana)."
+    },
+    {
+      "id": "b-salmone-cartoccio-patate",
+      "nome": "Salmone al cartoccio con patate e zucchine",
+      "categoria": "secondo",
+      "slot": [
+        "cena"
+      ],
+      "tag": [
+        "pesce_fresco",
+        "patate"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "150 g salmone fresco",
+        "180 g patate",
+        "200 g zucchine",
+        "aneto o erba cipollina, limone",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Affetta sottili patate e zucchine e precuoci le patate 8 minuti al vapore. Prepara un cartoccio con le verdure, il salmone sopra, fette di limone, erbe e un pizzico di sale. Cuoci in forno a 190 °C per 15 minuti. Condisci a crudo con l'olio prima di servire."
+    },
+    {
+      "id": "b-orata-pomodorini-pane",
+      "nome": "Orata al cartoccio con pomodorini e pane integrale",
+      "categoria": "secondo",
+      "slot": [
+        "cena"
+      ],
+      "tag": [
+        "pesce_fresco",
+        "pane"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "180 g orata (in filetti o intera pulita)",
+        "200 g pomodori o pomodorini",
+        "80 g pane integrale",
+        "origano, prezzemolo, capperi sciacquati a piacere",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Su carta forno metti l'orata, i pomodorini tagliati a metà, origano, prezzemolo e qualche cappero. Chiudi il cartoccio e cuoci a 190 °C per 15-20 minuti. Servi con il pane tostato per raccogliere il sughetto e l'olio a crudo."
+    },
+    {
+      "id": "b-zuppa-ceci-bieta",
+      "nome": "Zuppa di ceci e bieta con crostini di pane integrale",
+      "categoria": "unico",
+      "slot": [
+        "cena",
+        "pranzo"
+      ],
+      "tag": [
+        "legumi",
+        "pane"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "120 g ceci in scatola scolati",
+        "200 g bieta",
+        "pane integrale: 60 g (2 fette) a cena",
+        "brodo vegetale, rosmarino, aglio, pepe",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Stufa la bieta tagliata a strisce in pentola con un goccio di brodo, aglio e rosmarino per 5 minuti. Aggiungi i ceci e 2 mestoli di brodo vegetale; cuoci 10 minuti e frulla una parte per rendere la zuppa cremosa. Tosta il pane a cubetti in forno o in padella senza grassi. Servi la zuppa con i crostini e l'olio a crudo. È la cena del giovedì."
+    },
+    {
+      "id": "b-pasta-uovo-minestrone",
+      "nome": "Minestrone con pasta all'uovo",
+      "categoria": "unico",
+      "slot": [
+        "cena"
+      ],
+      "tag": [
+        "piatto_unico",
+        "pasta",
+        "pasta-uovo"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "80 g pasta all'uovo secca (oppure 60 g pasta integrale)",
+        "200 g minestrone cotto (fatto in casa o surgelato)",
+        "brodo vegetale, basilico o rosmarino",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Scalda il minestrone allungandolo con un po' di brodo vegetale. Cuoci la pasta all'uovo a parte (oppure direttamente nel minestrone, aggiungendo brodo). Servi in un piatto fondo con le erbe e l'olio a crudo. È la cena del venerdì: niente secondo."
+    },
+    {
+      "id": "b-pasta-ceci-pomodoro-parmigiano",
+      "nome": "Pasta di ceci al pomodoro e parmigiano",
+      "categoria": "unico",
+      "slot": [
+        "cena"
+      ],
+      "tag": [
+        "piatto_unico",
+        "pasta",
+        "pasta-legumi"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "100 g pasta di ceci",
+        "passata o pomodori per un sugo semplice",
+        "1 cucchiaio abbondante di parmigiano",
+        "200 g minestrone come primo (come nel menù) oppure verdura",
+        "basilico",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Prepara un sugo di pomodoro semplice: passata, basilico e un pizzico di sale, 10 minuti a fuoco basso. Cuoci la pasta di ceci (di solito 6-8 minuti: si rompe facilmente, non cuocerla troppo), scolala e condiscila col sugo, l'olio a crudo e un abbondante cucchiaio di parmigiano, come suggerisce il piano."
+    },
+    {
+      "id": "b-insalata-patate-fagiolini-uova",
+      "nome": "Insalata tiepida di patate, fagiolini e uova sode",
+      "categoria": "unico",
+      "slot": [
+        "cena"
+      ],
+      "tag": [
+        "uova",
+        "patate"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "180 g patate",
+        "200 g fagiolini freschi",
+        "2 uova",
+        "aceto di mele, erba cipollina o prezzemolo, pepe",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Cuoci al vapore (o lessa) le patate a cubetti e i fagiolini spuntati, 12-15 minuti. Rassoda le uova in acqua bollente per 9 minuti. Unisci patate e fagiolini ancora tiepidi, condisci con olio, aceto, pepe ed erbe, e aggiungi le uova a spicchi. È la cena della domenica."
+    },
+    {
+      "id": "b-frittata-zucchine-forno",
+      "nome": "Frittata di zucchine al forno con pane integrale",
+      "categoria": "secondo",
+      "slot": [
+        "cena",
+        "pranzo"
+      ],
+      "tag": [
+        "uova",
+        "pane"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "2 uova",
+        "200 g zucchine (oppure spinaci o bieta)",
+        "pane: 80 g integrale a cena, 90 g semintegrale a pranzo",
+        "menta o basilico, pepe",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Grattugia le zucchine e strizzale. Sbatti le uova con pepe ed erbe, unisci le zucchine e versa in una piccola teglia con carta forno. Cuoci a 180 °C per 15-20 minuti (oppure in padella antiaderente coperta a fuoco basso). Servi con il pane e l'olio a crudo sulla verdura."
+    },
+    {
+      "id": "b-vellutata-zucca-lenticchie",
+      "nome": "Vellutata di zucca e lenticchie con crostini",
+      "categoria": "unico",
+      "slot": [
+        "cena"
+      ],
+      "tag": [
+        "legumi",
+        "pane"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "200 g zucca gialla",
+        "120 g lenticchie in scatola scolate",
+        "60 g pane integrale (2 fette: con i legumi il pane è ridotto)",
+        "brodo vegetale, zenzero, curcuma, rosmarino",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Cuoci la zucca a pezzi in poco brodo con zenzero e curcuma per 15 minuti. Aggiungi metà delle lenticchie e frulla tutto. Unisci le lenticchie rimaste intere e scalda. Servi con i crostini di pane tostato, rosmarino e l'olio a crudo."
+    },
+    {
+      "id": "b-pasta-fagioli",
+      "nome": "Pasta e fagioli",
+      "categoria": "unico",
+      "slot": [
+        "pranzo",
+        "cena"
+      ],
+      "tag": [
+        "legumi",
+        "pasta"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "pasta corta (ditalini o mista): 80 g a pranzo, 60 g integrale a cena",
+        "120 g fagioli borlotti o cannellini in scatola scolati",
+        "200 g carote e pomodori (oppure zucchine)",
+        "rosmarino, salvia, brodo vegetale, pepe",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Stufa le verdure a dadini in pentola con un dito di brodo, rosmarino e salvia per 8 minuti. Aggiungi i fagioli, schiacciane metà con la forchetta e allunga con brodo caldo. Quando bolle cuoci la pasta direttamente nella minestra, mescolando e aggiungendo brodo se serve. Riposa 2 minuti, poi completa con pepe e l'olio a crudo."
+    },
+    {
+      "id": "b-fave-cicoria",
+      "nome": "Fave e cicoria con crostini",
+      "categoria": "unico",
+      "slot": [
+        "cena"
+      ],
+      "tag": [
+        "legumi",
+        "pane"
+      ],
+      "difficolta": 1,
+      "porzioni": 1,
+      "ingredienti": [
+        "120 g fave in scatola scolate (o fave secche già lessate)",
+        "200 g cicoria",
+        "60 g pane integrale (2 fette)",
+        "aglio, peperoncino, brodo vegetale",
+        "olio EVO: la quota del pasto (15 g, 1 cucchiaio e ½)"
+      ],
+      "procedimento": "Lessa la cicoria 8-10 minuti, scolala e ripassala in padella con aglio, peperoncino e un goccio d'acqua. Scalda le fave con un mestolo di brodo e schiacciale fino a una purea morbida. Servi la purea con la cicoria sopra, l'olio a crudo e il pane tostato. Un classico pugliese, adatto alla cena con i legumi."
+    }
+  ]
+}

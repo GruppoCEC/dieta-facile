@@ -3,6 +3,49 @@
   "voci": [
     {
       "parole": [
+        "hamburger"
+      ],
+      "emoji": "🍔"
+    },
+    {
+      "parole": [
+        "tortellini"
+      ],
+      "emoji": "🥟"
+    },
+    {
+      "parole": [
+        "pop corn"
+      ],
+      "emoji": "🍿"
+    },
+    {
+      "parole": [
+        "tisana"
+      ],
+      "emoji": "🍵"
+    },
+    {
+      "parole": [
+        "grissini"
+      ],
+      "emoji": "🥖"
+    },
+    {
+      "parole": [
+        "stracchino",
+        "groviera"
+      ],
+      "emoji": "🧀"
+    },
+    {
+      "parole": [
+        "pizza"
+      ],
+      "emoji": "🍕"
+    },
+    {
+      "parole": [
         "agnello",
         "maiale",
         "selvaggina"

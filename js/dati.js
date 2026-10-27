@@ -5,7 +5,7 @@
 
 // Versione dei dati: deve coincidere con ?v= in index.html e con VERSIONE in sw.js.
 // Serve a scavalcare le cache (GitHub Pages, browser) quando si pubblica un aggiornamento.
-export const VERSIONE_DATI = '9';
+export const VERSIONE_DATI = '10';
 
 const RICETTE_COMUNI = 'dati/ricette.json';
 let registro = null;
@@ -36,15 +36,29 @@ export async function caricaDati(dietaId) {
   const info = await trovaDieta(dietaId);
   if (!info) throw new Error(`Dieta "${dietaId}" non trovata nel registro.`);
 
-  const [dieta, ricette, stagioni, emoji, calorie] = await Promise.all([
+  const [dieta, ricetteBase, aggiuntive, stagioni, emoji, calorie] = await Promise.all([
     caricaJson(info.file),
     caricaJson(info.ricette || RICETTE_COMUNI),
+    info.ricetteAggiuntive ? caricaJson(info.ricetteAggiuntive) : null,
     caricaJson('dati/stagioni.json'),
     caricaJson('dati/emoji.json'),
     caricaJson('dati/calorie.json')
   ]);
+  const ricette = aggiuntive ? unisciRicettari(ricetteBase, aggiuntive) : ricetteBase;
   cache[dietaId] = { dietaInfo: info, dieta, ricette, stagioni, emoji, calorie };
   return cache[dietaId];
+}
+
+/**
+ * Ricettario comune + ricette aggiuntive di una sola dieta ("ricetteAggiuntive" nel registro).
+ * Le ricette aggiuntive vengono prima; le categorie nuove si aggiungono in fondo.
+ */
+function unisciRicettari(base, aggiuntive) {
+  const categorie = [...base.categorie];
+  for (const c of aggiuntive.categorie || []) {
+    if (!categorie.some(x => x.id === c.id)) categorie.push(c);
+  }
+  return { ...base, categorie, ricette: [...(aggiuntive.ricette || []), ...base.ricette] };
 }
 
 async function caricaJson(percorso) {

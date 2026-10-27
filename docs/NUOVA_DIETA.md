@@ -13,7 +13,12 @@ il codice: dati, sincronizzazione e lista della spesa sono separati.
    una copia di `dati/diete/mediterranea-a/dieta.json` e sostituire i contenuti.
 3. Scrivere la tabella di verifica `docs/diete/<id>.md` e farla confermare contro il PDF.
 4. Se la dieta ha un proprio ricettario: `dati/diete/<id>/ricette.json` (stesso formato
-   di `dati/ricette.json`). Altrimenti si usa il ricettario comune.
+   di `dati/ricette.json`). Altrimenti si usa il ricettario comune. Per **aggiungere** ricette
+   al ricettario comune solo per quella dieta, usare `ricetteAggiuntive` nel registro (vedi sotto).
+   Campi facoltativi della dieta: `verduraQuantita` (es. "circa 200 g a pasto"; se manca l'app
+   scrive "a volontà") e `verdureAmmesse` (parole chiave: l'app propone solo le verdure di
+   stagione che le contengono). Una frequenza senza `max` significa "almeno `min` volte".
+   Un carboidrato con `categoria` (es. pasta di ceci → `legumi`) conta nelle frequenze come un secondo.
 5. Alimenti nuovi: aggiungere le parole chiave in `dati/emoji.json` e `dati/calorie.json`
    (l'ordine conta: le voci più specifiche prima).
 
@@ -25,7 +30,8 @@ In `dati/diete.json` aggiungere una riga:
 { "id": "mediterranea-b", "nome": "Dieta mediterranea — famiglia 2", "file": "dati/diete/mediterranea-b/dieta.json" }
 ```
 
-(con `"ricette": "dati/diete/mediterranea-b/ricette.json"` se ha un ricettario proprio).
+(con `"ricette": "dati/diete/mediterranea-b/ricette.json"` se ha un ricettario proprio,
+oppure `"ricetteAggiuntive": "dati/diete/mediterranea-b/ricette.json"` per sommarlo a quello comune).
 Aggiungere i file nuovi a `FILE_APP` in `sw.js`, aumentare la versione (vedi
 `PUBBLICAZIONE.md`) e pubblicare.
 

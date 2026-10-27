@@ -9,7 +9,8 @@ import {
 import { trovaOpzione, trovaCarbo, trovaSecondo } from './dati.js';
 import {
   motivoBlocco, riepilogoLimiti, riepilogoSecondi, fruttaDelGiorno,
-  quantitaCarbo, giornoCompleto, formattaQuantita, haTag, maiuscola, varianteScelta, chiaveVariante
+  quantitaCarbo, giornoCompleto, formattaQuantita, haTag, maiuscola, varianteScelta, chiaveVariante,
+  quantitaVerdura
 } from './vincoli.js';
 import { apriFoglio, chiudiFoglio, aggiornaFoglio } from './foglio.js';
 import { kcalPasto, kcalGiorno, kcalMediaSettimana, formattaKcal, calorieDisponibili } from './calorie.js';
@@ -103,7 +104,8 @@ export function montaSettimana(contenitore, ctx) {
     for (const c of riepilogoSecondi(dieta, p)) {
       const chip = document.createElement('span');
       chip.className = `chip ${c.stato}`;
-      const obiettivo = c.min === c.max ? `${c.max}` : (c.min === 0 ? `max ${c.max}` : `${c.min}-${c.max}`);
+      const obiettivo = c.max == null ? `almeno ${c.min}`
+        : c.min === c.max ? `${c.max}` : (c.min === 0 ? `max ${c.max}` : `${c.min}-${c.max}`);
       chip.textContent = `${c.nome}: ${c.n} / ${obiettivo}`;
       r1.appendChild(chip);
     }
@@ -198,7 +200,7 @@ export function montaSettimana(contenitore, ctx) {
         pezzi.push(`olio EVO ${dieta[slotDef.id].olio.q} g`);
         carta.appendChild(el('span', 'dettaglio', pezzi.join(' · ')));
 
-        const verdure = extra.verdura && extra.verdura.length ? extra.verdura.join(', ') : 'di stagione, a volontà (tocca per scegliere)';
+        const verdure = extra.verdura && extra.verdura.length ? extra.verdura.join(', ') : `di stagione, ${quantitaVerdura(dieta)} (tocca per scegliere)`;
         carta.appendChild(el('span', 'dettaglio-extra', `Verdura: ${verdure}`));
       }
     } else {
@@ -398,10 +400,10 @@ export function montaSettimana(contenitore, ctx) {
     const extra = leggiExtra(p, giorno, slotDef.id);
     const scelte = extra.verdura || [];
     const box = document.createElement('div');
-    box.appendChild(titoletto(`Verdura a volontà — di stagione a ${st.nome} (puoi sceglierne più di una)`));
+    box.appendChild(titoletto(`Verdura, ${quantitaVerdura(ctx.dieta)} — di stagione a ${st.nome} (puoi sceglierne più di una)`));
     const chips = document.createElement('div');
     chips.className = 'chips';
-    for (const v of st.verdura) {
+    for (const v of verdureDiStagione(ctx.dieta, st)) {
       const attiva = scelte.includes(v);
       chips.appendChild(chip(maiuscola(v), attiva, () => {
         const nuove = attiva ? scelte.filter(x => x !== v) : [...scelte, v];
@@ -511,7 +513,7 @@ export function montaSettimana(contenitore, ctx) {
           if (carbo.varianti) impostaExtra(p, g, slot, chiaveVariante('carbo'), aCaso(carbo.varianti).id);
         }
         const nVerdure = 1 + Math.floor(Math.random() * 2);
-        impostaExtra(p, g, slot, 'verdura', mescola(st.verdura).slice(0, nVerdure));
+        impostaExtra(p, g, slot, 'verdura', mescola(verdureDiStagione(dieta, st)).slice(0, nVerdure));
       }
 
       // 4) merenda: senza frutta se il giorno ne ha già abbastanza (e se esistono alternative)
@@ -570,6 +572,16 @@ export function montaSettimana(contenitore, ctx) {
     b.textContent = testo;
     b.addEventListener('click', azione);
     return b;
+  }
+
+  /**
+   * Verdure di stagione del mese; se la dieta indica "verdureAmmesse" (parole chiave),
+   * solo quelle previste dal piano. Se nel mese non ce n'è nessuna, l'elenco completo.
+   */
+  function verdureDiStagione(dieta, st) {
+    if (!Array.isArray(dieta.verdureAmmesse)) return st.verdura;
+    const ammesse = st.verdura.filter(v => dieta.verdureAmmesse.some(p => v.toLowerCase().includes(p)));
+    return ammesse.length ? ammesse : st.verdura;
   }
 
   function nomeBreve(carbo) {

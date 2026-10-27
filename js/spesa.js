@@ -4,7 +4,7 @@
 
 import { GIORNI, SLOT_PRINCIPALI, leggiExtra, impostaSpuntata, azzeraSpuntate, meseDellaSettimana } from './stato.js';
 import { trovaOpzione, trovaCarbo, trovaSecondo } from './dati.js';
-import { quantitaCarbo, formattaQuantita, maiuscola, varianteScelta, ingredientiEffettivi } from './vincoli.js';
+import { quantitaCarbo, formattaQuantita, maiuscola, varianteScelta, ingredientiEffettivi, quantitaVerdura } from './vincoli.js';
 import { conEmoji } from './emoji.js';
 
 /**
@@ -112,14 +112,15 @@ export function montaSpesa(contenitore, ctx) {
 
     // Verdure
     if (spesa.verdure.length || spesa.pastiVerduraGenerica) {
-      contenitore.appendChild(el('h3', 'reparto-titolo', 'Verdura (a volontà)'));
+      const qv = quantitaVerdura(dieta);
+      contenitore.appendChild(el('h3', 'reparto-titolo', `Verdura (${qv})`));
       const lista = document.createElement('ul');
       lista.className = 'lista-spesa';
       for (const v of spesa.verdure) {
-        lista.appendChild(disegnaVoce({ chiave: `verdura|${v.nome}`, nome: maiuscola(v.nome), testoQ: `per ${v.pasti} ${v.pasti === 1 ? 'pasto' : 'pasti'}, a volontà` }));
+        lista.appendChild(disegnaVoce({ chiave: `verdura|${v.nome}`, nome: maiuscola(v.nome), testoQ: `per ${v.pasti} ${v.pasti === 1 ? 'pasto' : 'pasti'}, ${qv}` }));
       }
       if (spesa.pastiVerduraGenerica) {
-        lista.appendChild(disegnaVoce({ chiave: 'verdura|generica', nome: 'Verdura di stagione (non specificata)', testoQ: `per ${spesa.pastiVerduraGenerica} ${spesa.pastiVerduraGenerica === 1 ? 'pasto' : 'pasti'}, a volontà` }));
+        lista.appendChild(disegnaVoce({ chiave: 'verdura|generica', nome: 'Verdura di stagione (non specificata)', testoQ: `per ${spesa.pastiVerduraGenerica} ${spesa.pastiVerduraGenerica === 1 ? 'pasto' : 'pasti'}, ${qv}` }));
       }
       contenitore.appendChild(lista);
     }
